@@ -1,0 +1,125 @@
+{
+ "strategy": "heading",
+ "built_at": "2026-10-28T22:04:19Z",
+ "files": [
+  "about.md",
+  "experience.md",
+  "projects.md",
+  "skills.md",
+  "faq.md"
+ ],
+ "chunks": [
+  {
+   "file": "about.md",
+   "heading": "about",
+   "text": "I am Maha Zeb, a Computer Science with Cybersecurity student at the University of Salford. I am predicted a First Class degree (81.83%).\n\nI have built an AI onboarding assistant during an internship at IRIS Software Group, and I set up a full Active Directory domain on Azure by myself.\n\nI am looking for a 2027 summer internship in software engineering, AI/ML or cybersecurity.\n\nI am based in Manchester. You can contact me at Mahazeb05@outlook.com",
+   "id": "about-1",
+   "chars": 449
+  },
+  {
+   "file": "experience.md",
+   "heading": "Talent Researcher Intern (AI Onboarding Assistant project), IRIS Software Group, August 2026",
+   "text": "Talent Researcher Intern (AI Onboarding Assistant project), IRIS Software Group, August 2026. I built an onboarding assistant in Microsoft Copilot Studio for real internal use across the company. It serves three groups of people: hiring managers, people managers and new hires, who each need different information.\n\nI reduced its response time from 158 seconds to 12 seconds by restructuring the metadata and separating the documents.\n\nI designed a two-tier retrieval setup with prioritised sources and fallback logic. I also used Microsoft Entra ID and the Graph API so the assistant could personalise answers to the person asking.\n\nI improved retrieval accuracy by uploading and labelling about 25 source documents individually.",
+   "id": "experience-1",
+   "chars": 730
+  },
+  {
+   "file": "experience.md",
+   "heading": "Secretary, Computing Society, University of Salford, September 2025 to present",
+   "text": "Secretary, Computing Society, University of Salford, September 2025 to present. I coordinate committee meetings and record the minutes so everyone stays aligned on plans and actions. I also help plan society events and handle communication with members.",
+   "id": "experience-2",
+   "chars": 253
+  },
+  {
+   "file": "projects.md",
+   "heading": "Cloud Active Directory and SOC Lab (Azure, Windows Server 2022)",
+   "text": "Cloud Active Directory and SOC Lab (Azure, Windows Server 2022). I set up Azure virtual machines, virtual networks and resource groups. I promoted a server to Domain Controller with Active Directory, DNS, Kerberos and Group Policy.\n\nI joined a client machine to the domain and checked that logins and DNS worked. I created 5 test user accounts in a custom Organizational Unit, with Domain Users and Remote Desktop Users group memberships, to copy a real company's access setup.\n\nI fixed DNS problems, domain join failures and password policy errors. I read the Windows Security Event Logs on the Domain Controller to confirm user creation, password resets and logins.",
+   "id": "projects-1",
+   "chars": 667
+  },
+  {
+   "file": "projects.md",
+   "heading": "Tool Hire Shop Management System (Java)",
+   "text": "Tool Hire Shop Management System (Java). I built a Java system for a tool hire shop using object-oriented design, with a multi-level class structure for tools, accessories and workwear.\n\nIt handles reservations and customers, including checks for availability across several days, prevention of double bookings, unique ID generation and saving data to files. I used structured exception handling and a dedicated test class throughout development.\n\nThe code is on GitHub: https://github.com/Mi-mi-zi/ToolItemReservation",
+   "id": "projects-2",
+   "chars": 518
+  },
+  {
+   "file": "projects.md",
+   "heading": "Week 1 Project: Ground Truth News Classification Evaluation",
+   "text": "Week 1 Project: Ground Truth News Classification Evaluation. I manually labelled 30 news headlines across World, Sports, Business and Sci/Tech categories, then evaluated AI-generated classifications against benchmark labels using agreement rates, Cohen's Kappa, confusion matrices and model evaluation techniques. I also compared prompt-engineered AI classification against a TF-IDF machine learning model and investigated the impact of data leakage on model performance.\n\nResults: Labelled 30 news articles Achieved 83.3% agreement (25/30) between AI classifications and benchmark labels Achieved Cohen's Kappa score of 0.777 Identified Business and Sci/Tech as the most commonly confused categories Evaluated a TF-IDF model with 86.5% held-out accuracy on a larger dataset",
+   "id": "projects-3",
+   "chars": 774
+  },
+  {
+   "file": "projects.md",
+   "heading": "Week 2 project: Newsroom Triage app",
+   "text": "Week 2 project: Newsroom Triage app. Built a Python-based news classification application using FastAPI, Gradio, and Neon Postgres. The application classifies headlines into four categories, stores results in a database, provides confidence scores, exposes API endpoints, and evaluates performance against previously labelled data. The system was split into separate frontend and backend services communicating over HTTP.\n\nResults: Built 4 API endpoints: /classify, /runs, /score and /health Migrated application data from SQLite to Neon Postgres Evaluated the system against 30 labelled headlines Baseline performance: 7/30 correct predictions, 23.3% accuracy, 0.1825 Cohen's Kappa Discovered and fixed a scoring bug where invalid predictions were incorrectly excluded from Kappa calculations",
+   "id": "projects-4",
+   "chars": 793
+  },
+  {
+   "file": "skills.md",
+   "heading": "Languages and tools",
+   "text": "Languages and tools. Java, Python, SQL, HTML, CSS, MySQL, Excel, Git, GitHub, Linux, Ubuntu, VirtualBox, Visual Studio and BlueJ.",
+   "id": "skills-1",
+   "chars": 129
+  },
+  {
+   "file": "skills.md",
+   "heading": "AI and cloud",
+   "text": "AI and cloud. Microsoft Copilot Studio, retrieval optimisation, metadata design, Microsoft Entra ID and the Graph API, Azure virtual machines and the Azure Portal.",
+   "id": "skills-2",
+   "chars": 163
+  },
+  {
+   "file": "skills.md",
+   "heading": "Security and systems",
+   "text": "Security and systems. Active Directory, DNS, Kerberos, Group Policy, Windows Security Logs and Event Viewer, and correlating events such as logins, user creation and password resets.",
+   "id": "skills-3",
+   "chars": 182
+  },
+  {
+   "file": "skills.md",
+   "heading": "Still learning",
+   "text": "Still learning. PHP and full-stack web development Machine learning, model evaluation, and AI systems Robotics and autonomous systems Python backend development (FastAPI, APIs, databases) Cloud deployment and software engineering practices",
+   "id": "skills-4",
+   "chars": 239
+  },
+  {
+   "file": "faq.md",
+   "heading": "What is your notice period?",
+   "text": "What is your notice period?. I am a student, so I have no notice period. I am free to start from May 2027.",
+   "id": "faq-1",
+   "chars": 106
+  },
+  {
+   "file": "faq.md",
+   "heading": "When could you start?",
+   "text": "When could you start?. I am available from May to August 2027, for a summer internship.",
+   "id": "faq-2",
+   "chars": 87
+  },
+  {
+   "file": "faq.md",
+   "heading": "Where are you based?",
+   "text": "Where are you based?. I am based in Manchester.",
+   "id": "faq-3",
+   "chars": 47
+  },
+  {
+   "file": "faq.md",
+   "heading": "What are you looking for?",
+   "text": "What are you looking for?. A 2027 summer internship in software engineering, AI/ML or cybersecurity.",
+   "id": "faq-4",
+   "chars": 100
+  },
+  {
+   "file": "faq.md",
+   "heading": "What is your degree?",
+   "text": "What is your degree?. BSc Computer Science with Cybersecurity at the University of Salford, started September 2025, predicted First Class (81.83%).",
+   "id": "faq-5",
+   "chars": 147
+  }
+ ]
+}
