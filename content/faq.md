@@ -1,30 +1,25 @@
 # Frequently asked
 
-## Are you looking for a new role?
-
-Yes. I am open to AI engineering roles, remote or hybrid, and I am particularly
-interested in teams where evaluation is taken seriously.
-
-## Where are you based and can you work across time zones?
-
-Bangalore, India. I work remotely and I overlap comfortably with European hours
-and the early part of the US east coast day.
-
 ## What is your notice period?
 
-Thirty days.
+[FILL IN]
 
-## Do you prefer backend or frontend work?
+## Where are you based?
 
-Backend. I can build a front end when one is needed and I am not afraid of CSS,
-but the work I do best is on the server and in the data.
+[FILL IN]
 
-## Can you share a reference?
+## What are you looking for?
 
-Yes, on request, from my current manager and from a colleague on the support
-team who used the assistant daily.
+A 2027 summer internship in software engineering, AI/ML or cybersecurity.
 
-## What are you not looking for?
+## When could you start?
 
-A role with no evaluation story, where success is measured by whether the demo
-impressed someone. I have done that and it does not end well.
+[FILL IN: dates you are available in summer 2027]
+
+## What is your degree?
+
+BSc Computer Science with Cybersecurity at the University of Salford, started September 2025, predicted First Class (81.83%).
+
+## Can you provide references?
+
+[FILL IN]
