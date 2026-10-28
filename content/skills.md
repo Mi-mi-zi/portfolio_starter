@@ -13,5 +13,8 @@ Microsoft Copilot Studio, retrieval optimisation, metadata design, Microsoft Ent
 Active Directory, DNS, Kerberos, Group Policy, Windows Security Logs and Event Viewer, and correlating events such as logins, user creation and password resets.
 
 ## Still learning
-
-[FILL IN: what I am currently learning]
+PHP and full-stack web development
+Machine learning, model evaluation, and AI systems
+Robotics and autonomous systems
+Python backend development (FastAPI, APIs, databases)
+Cloud deployment and software engineering practices
