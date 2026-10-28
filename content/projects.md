@@ -1,40 +1,25 @@
 # Projects
 
-## News triage assistant
+## Cloud Active Directory and SOC Lab (Azure, Windows Server 2022)
 
-A classifier and triage app for news items. It sorts an item into one of four
-categories, decides whether a question needs explaining or refusing, retrieves
-a relevant note from a small knowledge base, and records every run so the
-behaviour can be scored afterwards.
+I set up Azure virtual machines, virtual networks and resource groups. I promoted a server to Domain Controller with Active Directory, DNS, Kerberos and Group Policy.
 
-The interesting part is the config file. The prompt, the routing rules, the
-guardrails and the retrieval settings all live in one place in plain language,
-so changing behaviour does not mean changing code. I built it that way after
-watching non-engineers be unable to contribute to a system they understood
-perfectly well.
+I joined a client machine to the domain and checked that logins and DNS worked. I created 5 test user accounts in a custom Organizational Unit, with Domain Users and Remote Desktop Users group memberships, to copy a real company's access setup.
 
-Scored 56.7 percent accuracy with a Cohen's kappa of 0.42 on the first pass.
-After fixing the prompt to name all four categories and to say what to do when
-two categories both fit, it went to 83 percent.
+I fixed DNS problems, domain join failures and password policy errors. I read the Windows Security Event Logs on the Domain Controller to confirm user creation, password resets and logins.
 
-Stack: Python, Gradio, SQLite, Groq.
+## Tool Hire Shop Management System (Java)
 
-## Text classification from scratch
+I built a Java system for a tool hire shop using object-oriented design, with a multi-level class structure for tools, accessories and workwear.
 
-A news topic classifier built without a framework: hand labelling, inter
-annotator agreement, TF-IDF features, logistic regression, confusion matrix.
+It handles reservations and customers, including checks for availability across several days, prevention of double bookings, unique ID generation and saving data to files. I used structured exception handling and a dedicated test class throughout development.
 
-Two things surprised me. First, my own labels disagreed with a second labeller
-about one time in five, which puts a hard ceiling on any accuracy claim.
-Second, a deliberately leaky split scored 1.000 on a 200 row pool, which is how
-I learned to be suspicious of a perfect number.
+The code is on GitHub: https://github.com/Mi-mi-zi/ToolItemReservation
 
-Stack: Python, scikit-learn, pandas.
+## Week 1 project: [FILL IN: name]
 
-## This portfolio
+[FILL IN: what I built, how I labelled the data, and the real numbers]
 
-The site you are reading. A static page with a chat box that answers questions
-about me from my own notes. Retrieval runs in the browser, generation runs in a
-serverless function so the API key never reaches the client.
+## Week 2 project: Newsroom Triage app
 
-Stack: HTML, CSS, JavaScript, Vercel Functions, Groq.
+[FILL IN: what I built and what I changed. Only include numbers you really measured.]
