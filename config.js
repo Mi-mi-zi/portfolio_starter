@@ -6,10 +6,10 @@
 // ===========================================================================
 
 // Your name, as it should appear on the page and in the chat answers.
-export const OWNER_NAME = "Sample Person";
+export const OWNER_NAME = "Maha Zeb";
 
 // One line under your name.
-export const HEADLINE = "AI Engineer";
+export const HEADLINE = "Computer Science with CyberSecurity student";
 
 // The instruction given to the model before every answer.
 // Keep it short. Tell it to use only the notes, and what to do when the notes
