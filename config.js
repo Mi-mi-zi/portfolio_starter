@@ -44,7 +44,7 @@ export const PASSAGES = 3;
 
 // A passage scoring below this is treated as irrelevant and dropped.
 // Raise it to be stricter. Lower it to let weaker matches through.
-export const SIMILARITY_FLOOR = 0.05;
+export const SIMILARITY_FLOOR = 0.14;
 
 // The hard limit on how much text can go into the prompt, in characters.
 // This is your context window, expressed in the only unit you can see directly.
