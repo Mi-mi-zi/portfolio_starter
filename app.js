@@ -9,7 +9,7 @@
 // ---------------------------------------------------------------------------
 
 import * as cfg from "./config.js";
-import { retrieve, buildContext, RETRIEVAL_METHOD } from "./lib/retrieve.js";
+import { retrieve, buildContext, RETRIEVAL_METHOD } from "./lib/retrieve_vector.js";
 
 const $ = (sel) => document.querySelector(sel);
 
@@ -21,6 +21,7 @@ const SUGGESTED = [
 ];
 
 let CHUNKS = [];
+let VECTORISER = null;
 
 // --- tiny markdown render, headings and paragraphs only --------------------
 function renderMarkdown(md) {
@@ -93,9 +94,10 @@ async function ask(question) {
   turn.querySelector(".a").textContent = "Thinking…";
   $("#thread").append(turn);
 
-  const passages = retrieve(question, CHUNKS, {
+    const passages = retrieve(question, CHUNKS, {
     passages: cfg.PASSAGES,
     floor: cfg.SIMILARITY_FLOOR,
+    vectoriser: VECTORISER,
   });
   const { context, droppedForSpace } = buildContext(
     passages,
@@ -124,6 +126,12 @@ async function ask(question) {
     answerEl.textContent = data.answer;
     if (data.blocked) answerEl.classList.add("blocked");
   }
+  const srcEl = document.createElement("p");
+  srcEl.className = "sources";
+  srcEl.textContent = passages.length
+    ? "Sources: " + passages.map((p) => `${p.id} (score ${p.score})`).join(", ")
+    : "Sources: none found above the similarity floor";
+  answerEl.after(srcEl);
 
   if (cfg.SHOW_TRACE && data.trace) {
     let html = renderTrace(data.trace);
@@ -148,6 +156,7 @@ async function start() {
   try {
     const doc = await (await fetch("chunks.json")).json();
     CHUNKS = doc.chunks || [];
+    VECTORISER = doc.vectoriser || null;
     $("#foot-note").textContent =
       `${CHUNKS.length} chunks, built ${doc.built_at}, strategy "${doc.strategy}".`;
   } catch {
